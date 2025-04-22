@@ -24,5 +24,5 @@ resource "aws_instance" "app_server" {
   tags = {
     Name = "ExampleAppServerInstance"
   }
-  user_data = file("/Users/gercoh01/customer/forked_bench/run_benchmarks.sh")
+  user_data = file("/Users/gercoh01/customer/forked_bench/install_dependencies_aws.sh")
 }
